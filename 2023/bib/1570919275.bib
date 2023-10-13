@@ -1,0 +1,41 @@
+@inproceedings{Ahme2310:Estimating,
+AUTHOR    = {Abdulrahman Ahmed and M. Amin Rahimian and Mark S. Roberts},
+TITLE    = {Estimating Treatment Effects Using Costly Simulation Samples from a
+{Population-Scale} Model of Opioid Use Disorder},
+BOOKTITLE    = {2023 IEEE EMBS International Conference on Biomedical and Health
+Informatics (BHI) (IEEE BHI 2023)},
+ADDRESS    = {Pittsburgh, USA},
+PAGES    = {15},
+DAYS    = {15},
+MONTH    = {October},
+YEAR    = {2023},
+KEYWORDS    = {epidemic models; intervention effects; Bayesian optimization; active
+learning},
+ABSTRACT    = {Large-scale models require substantial computational resources for analysis
+and studying treatment conditions. Specifically, estimating treatment
+effects using simulations may require a lot of infeasible resources to
+allocate at every treatment condition. Therefore, it is essential to
+develop efficient methods to allocate computational resources for
+estimating treatment effects. Agent-based simulation allows us to generate
+highly realistic simulation samples. FRED (A Framework for Reconstructing
+Epidemiological Dynamics) is an agent-based modeling system with a
+geospatial perspective using a synthetic population constructed based on
+the U.S. census data. Given its synthetic population, FRED simulations
+present a baseline for comparable results from different treatment
+conditions and treatment conditions. In this paper, we show three other
+methods for estimating treatment effects. In the first method, we resort to
+brute-force allocation, where all treatment conditions have an equal number
+of samples with a relatively large number of simulation runs. In the second
+method, we try to reduce the number of simulation runs by customizing
+individual samples required for each treatment effect based on the width of
+confidence intervals around the mean estimates. In the third method, we use
+a regression model, which allows us to learn across the treatment
+conditions such that simulation samples allocated for a treatment condition
+will help better estimate treatment effects in other (especially nearby)
+conditions. We show that the regression-based methods result in a
+comparable estimate of treatment effects with less computational resources.
+The reduced variability and faster convergence of model-based estimates
+come at the cost of increased bias, and the bias-variance trade-off can be
+controlled by adjusting the number of model parameters (e.g., including
+higher-order interaction terms in the regression model).},
+}
