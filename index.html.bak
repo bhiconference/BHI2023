@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+      
+.aligncenter {
+    text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style> </head>
+  <body>
+    <div class="header">
+      <h1>BHI Open Access</h1>
+      <p>This website hosts Open Access versions of the papers from the
+        Biomedical Health Informatics conferences with the goal of timely
+        dissemination of engineering and scientific knowledge.</p>
+      <p>The papers published here are mostly identical to the papers published
+        on IEEE Xplore. Copyright and all rights therein are retained by authors
+        or by other copyright holders. All persons copying this information are
+        expected to adhere to the terms and constraints invoked by each author's
+        copyright.</p>
+    </div>
+    <div class="topnav"> <a href="https://bhi.embs.org/2023/">Conference
+        Website</a> <a href="https://www.embs.org/bhi/" style="float:right">BHI</a>
+      <a href="https://www.embs.org/" style="float:right">EMBS</a> <a href="https://www.ieee.org/"
+
+        style="float:right">IEEE</a> </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <p class="aligncenter"> <img src="banner.png" alt="BHI banner" title="BHI banner"
+
+              height="300"> </p>
+          <h2>About BHI</h2>
+          <p>The IEEE-EMBS International Conference on Biomedical and Health
+            Informatics (BHI), sponsored by the IEEE Engineering in Medicine and
+            Biology Society (IEEEEMBS), is EMBS’s primary technical conference
+            on informatics and computing in healthcare and life sciences. BHI
+            2023 will take place in Pittsburgh, Pennsylvania from October 15-18,
+            2023. It will provide a unique forum to showcase basic and
+            translational research on big data analytics and machine learning
+            that address challenges in the acquisition, transmission,
+            processing, security, visualization, and interpretation of vast
+            volumes of multi-modal biomedical data, as well as related social,
+            behavioral, environmental, and geographical data. It will also
+            demonstrate the deployment of BHI informatics solutions that
+            integrate key technologies including artificial intelligence,
+            machine learning, mHealth, e-Health, human-computer interface,
+            telemedicine, bioinformatics, sensors, imaging, and public health
+            monitoring, to achieve patient-centric and outcome-driven effective
+            health care.</p>
+        </div>
+        <div class="card">
+          <h2>PUBLISHED PAPERS</h2>
+          <iframe src="papers.html" style="display:block; overflow:hidden; height:100%; width:99%; position: absolute;"
+
+            height="100%" frameborder="0" width="100%" ></iframe> </div>
+      </div>
+    </div>
+  </body>
+</html>
